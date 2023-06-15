@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.library.SignUpController">
+   <children>
+      <VBox alignment="CENTER_RIGHT" layoutX="161.0" layoutY="93.0" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <Label text="First Name" />
+            <Label text="Last Name" />
+            <Label text="PIN Number" />
+            <Label text="User ID" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="278.0" layoutY="93.0" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+         <children>
+            <TextField fx:id="textFirstName" promptText="First Name" />
+            <TextField fx:id="textLastName" promptText="Last Name" />
+            <TextField fx:id="textPin" promptText="PIN Number" />
+            <TextField fx:id="textUserId" promptText="User ID" />
+         </children>
+      </VBox>
+      <Button layoutX="236.0" layoutY="317.0" mnemonicParsing="false" onAction="#createUser" text="Create User" />
+      <Label fx:id="lblWarning" layoutX="175.0" layoutY="285.0" prefHeight="17.0" prefWidth="251.0" />
+   </children>
+</AnchorPane>
